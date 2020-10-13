@@ -4,17 +4,17 @@
 
 #include "gameFunctions.h"
 
-void initializeBlankString(const int len, char str)
+void initializeBlankString(int len, char str)
 {
   char dashStr[len];
     for (int i = 0; i < len; i++)
     {
-      dashStr[i] = "-";
+      dashStr[i] = '-';
     }
     strcpy(str, dashStr);
 }
 
-void printWithSpaces(const char str)
+void printWithSpaces(char str)
 {
   int strLen = strlen(str);
   for (int i = 0; i < strLen; i++)
@@ -23,7 +23,7 @@ void printWithSpaces(const char str)
   }
 }
 
-int revealGuessedLetter(const char str1, char str2, char letter)
+int revealGuessedLetter(char str1, char str2, char letter)
 {
   int len = strlen(str1);
   for (int i = 0; i < len; i++)
